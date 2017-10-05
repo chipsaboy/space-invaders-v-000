@@ -3,4 +3,7 @@ class CrewMember {
     this.position = position;
     this.currentShip = "Looking for a Rig";
   }
+  engageWarpDrive() {
+    
+  }
 }

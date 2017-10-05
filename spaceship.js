@@ -10,4 +10,10 @@ class Spaceship {
     this.docked = this.crewMembers.length < 1 ? true : false
     this.alertCrewMembers()
   }
+  alertCrewMembers() {
+    var ship = this;
+    this.crewMembers.forEach(function(crewMember) {
+      crewMember.currentShip = ship;
+    })
+  }
 }
